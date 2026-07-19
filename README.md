@@ -20,6 +20,26 @@ The model, termed as MSSNet, improves the resolution of standard MW imaging (MWI
 2. python, with standard libraries and pytorch
 
 # Steps
+First, download the whole repository and save in a folder. The next steps are as follows
 ## Step 1: Generating the MW and CT dataset
+1. Open the folder "dataset generation"
+2. Open the code "mainfunction_generate_MWI_CT_headmodel_b1.m"
+3. Run the code. If the user wants to modify parameters, the following lines in the code should be changed:
+### Line 5: 
+setting matching=1, will generate MW data for head models submerged in a coupling medium, which has the dielectric constant of the average human head. The generated data will populate the folder "DNN_MWI2CTHead_1G_matched". matching=0 (any other value than 1) will generate data in  the folder "DNN_MWI2CTHead_1G_FS".
+### Line 15, 16
+If you want to change the MW frequency to other than 1GHz, edit line 15 of the code. If you want to change the absorption characteristics at a different energy, edit line 16 of the code. Check the folders "Tissueproperties" and "Tissueproperties_CT" to see allowable MW frequency and HU energy band.
+### Lines 23-30 
+Describes different stroke geometries and data generation configutaiton. Can be arbitrarily changed to create different datasets.
+
+## Addition of noise
+1. Go to the folder 
+
+## Step 2: Training and validation
+1. Open the folder "MSSNet_training"
+2. Open the file "Training_bestmodels.py"
+3. Go to line 33. set the datapath to the working directory, which is the path to the parent directory "MSSNet_training"
+4. 
+   
 
 
