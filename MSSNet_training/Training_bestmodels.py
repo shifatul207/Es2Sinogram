@@ -30,7 +30,7 @@ srcfoldername= "DNN_MWI2CTHead_1G_" + srctype
 
 
 ##___________________set the data path according the the location where the srcfoldername folder exists
-data_path= r"pwd\Python codes and models" ## for example pwd is the working directory
+data_path= r"pwd\MSSNet_training" ## for example pwd is the working directory
 ##________________________________
 
 
