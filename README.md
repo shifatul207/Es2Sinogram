@@ -47,5 +47,8 @@ Describes different stroke geometries and data generation configutaiton. Can be 
    set noise= 'clean' if the user wants to train the model with clean data. Otherwise, uncomment line 21, and choose the noise level which the user has added
 5. Run the code.
    
+# Folder "Reproduce figs" contains the code which can be used to reproduce the figures in the manuscript.
 
+# Citation
+If the user finds the work useful, feel free to cite the work (Under progress)
 
